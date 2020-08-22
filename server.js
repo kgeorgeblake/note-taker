@@ -12,7 +12,7 @@ const { v4: uuidv4 } = require('uuid');
 // const port = process.env.PORT || 2000;
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //app object has useful methods like get put post delete -> these all correspond to http verbs
 //we will use app.get to respond to a get request
